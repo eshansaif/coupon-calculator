@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-4xl text-white bg-cyan-900 py-2 font-semibold text-center">Welcome to the Discount Calculator</h1>
+    <div class="bg-slate-400 w-1/2 mx-auto mt-8 p-8 rounded-lg text-center">
+        <p class="text-2xl mb-3">Total Price: <br> <input class="p-2 font-bold rounded-lg text-sm w-4/5" type="number"
+                name="" value="3000" id="price" placeholder="Enter your total Price in ৳"></p>
+        <p class="text-2xl mb-3">Apply Coupon: <br>
+            <input class="p-2 font-semibold rounded-lg text-sm w-4/5" type="text" name="" id="apply-coupon-field"
+                placeholder="Please enter your Valid Coupon">
+            <br>
+            <span class="text-red-500 font-semibold text-[14px] p-1">Use <span class="font-extrabold">'DISC30'</span>
+                Coupon
+                Code code for 30%
+                discount</span>
+        </p>
+        <p class="text-center">
+            <button id="btn-apply-coupon"
+                class="p-2 hover:bg-blue-600 bg-cyan-900 text-white text-lg font-medium rounded-lg text-center mb-3">Apply
+                Coupon</button>
+        </p>
+        <p class="text-2xl text-center">Grand Total: <span class="bg-blue-600 text-white p-1 rounded-lg">৳<span
+                    id="grand-total">00</span></span>
+        </p>
+    </div>
+
+    <script src="discount.js"></script>
+</body>
+
+</html>
